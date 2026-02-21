@@ -1,3 +1,16 @@
+// Responsive Navbar Toggle
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleBtn = document.getElementById("navbarToggle");
+  var menu = document.getElementById("navbarMenu");
+  var bannerArea = document.querySelector(".gtco-banner-area");
+
+  if (toggleBtn && menu && bannerArea) {
+    toggleBtn.addEventListener("click", function () {
+      menu.classList.toggle("active");
+      bannerArea.classList.toggle("menu-open");
+    });
+  }
+});
 (function () {
   "use strict";
 
