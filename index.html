@@ -3,13 +3,15 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta name="google-site-verification" content="_aWPbPNKdf_zKJUy02HxdNxxgDMn8jW5mtcXubxHtoE" />
     <meta charset="utf-8" />
+    <meta
+      name="google-site-verification"
+      content="_aWPbPNKdf_zKJUy02HxdNxxgDM8jW5mtcXubxHtoE"
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- awesone fonts css-->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
     <!-- owl carousel css-->
@@ -22,35 +24,42 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Fav Icon.jpg" />
     <title>4Spire Global</title>
     <style></style>
   </head>
   <body>
     <div class="navbar-container">
       <div class="navbar-brand"><img src="images/logo.png" alt="" /></div>
-      <div class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggle"
+        id="navbarToggle"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="navbar navbar-expand-lg" id="navbarMenu">
         <div class="navbar-nav">
           <a class="nav-link" href="#">Home</a>
-
           <a class="nav-link" href="#services">Services</a>
-
           <a class="nav-link" href="#about">About</a>
-
           <a class="nav-link" href="#contact">Contact</a>
         </div>
-      </div>
-      <div class="contact">
-        <a class="navbar-brand" href="#contact">Contact Us</a>
+        <div class="contact">
+          <a class="navbar-brand" href="#contact"
+            ><img src="images/phone.png" alt="" class="whatsapp-logo" />+91
+            8764666727</a
+          >
+        </div>
       </div>
     </div>
-    <div class="container-fluid gtco-banner-area">
-      <div
+    <div class="gtco-banner-area">
+      <!-- <div
         id="bannerCarousel"
         class="carousel slide"
         data-ride="carousel"
         data-interval="3000"
       >
-        <!-- Indicators (optional) -->
         <ol class="carousel-indicators">
           <li
             data-target="#bannerCarousel"
@@ -63,7 +72,6 @@
           <li data-target="#bannerCarousel" data-slide-to="4"></li>
         </ol>
 
-        <!-- Slides -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -125,7 +133,6 @@
           </div>
         </div>
 
-        <!-- Controls -->
         <a
           class="carousel-control-prev"
           href="#bannerCarousel"
@@ -142,8 +149,50 @@
         >
           <span class="carousel-control-next-icon"></span>
         </a>
-      </div>
+      </div> -->
+      <section class="custom-carousel-section">
+        <img class="custom-carousel-img" src="images/Banner-1.jpg" alt="" />
+        <div class="custom-carousel-background"></div>
+        <div
+          style="
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <div style="max-width: 900px; margin-left: 60px">
+            <div class="banner-content">
+              <h2 class="custom-carousel-title animate-top"></h2>
+              <h2 class="custom-carousel-desc animate-bottom"></h2>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: rgba(255, 200, 50, 0.2);
+            z-index: 4;
+          "
+        >
+          <div
+            class="custom-carousel-progress"
+            style="
+              height: 100%;
+              background: #f59e0b;
+              width: 0%;
+              transition: width 0.1s;
+            "
+          ></div>
+        </div>
+      </section>
     </div>
+
     <div class="container-fluid gtco-feature" id="services">
       <div class="row">
         <div class="col-md-7">
@@ -547,6 +596,11 @@
         </div>
       </div>
     </footer>
+    <div class="whatsapp-div">
+      <a href="https://wa.me/918764666727" target="_blank">
+        <img src="images/whatsapp.png" alt="" class="whatsapp-logo" />
+      </a>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -554,7 +608,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- owl carousel js-->
-    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <!-- <script src="owl-carousel/owl.carousel.min.js"></script> -->
+    <script src="js/custom-carousel.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
