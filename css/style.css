@@ -1395,7 +1395,7 @@ body {
 
 .custom-carousel-section {
   position: relative;
-  height: 600px;
+  height: 640px;
   overflow: hidden;
 
   @media (max-width: 576px) {
