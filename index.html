@@ -652,6 +652,18 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#policies" onclick="showPolicy('terms')">Terms &amp; Conditions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#policies" onclick="showPolicy('privacy')">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#policies" onclick="showPolicy('refund')">Refund Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#policies" onclick="showPolicy('shipping')">Shipping Policy</a>
+                </li>
               </ul>
               <h4 class="mt-5">Follow Us</h4>
               <ul class="nav follow-us-nav">
@@ -713,6 +725,19 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      function showPolicy(name) {
+        var policies = ['terms','privacy','refund','return','shipping'];
+        policies.forEach(function(p) {
+          document.getElementById('policy-' + p).style.display = (p === name) ? 'block' : 'none';
+          var tab = document.getElementById('tab-' + p);
+          if (tab) {
+            tab.style.background = (p === name) ? '#f59e0b' : '#e0e0e0';
+            tab.style.color = (p === name) ? '#fff' : '#333';
+          }
+        });
+      }
+    </script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
