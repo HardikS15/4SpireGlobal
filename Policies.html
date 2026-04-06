@@ -332,6 +332,7 @@
           if (panel) panel.classList.toggle('active', p === name);
           if (btn)   btn.classList.toggle('active',  p === name);
         });
+        history.replaceState(null, '', 'Policies.' + name);
       }
 
       // On page load, check URL ?tab= param and open the right tab
